@@ -1,5 +1,3 @@
-# ingreso1
-nodejs
 const edad = parseInt(prompt("¿Cuál es tu edad?"));
 const promesaIngreso = new Promise ((resolve, reject) => {
   if (edad >= 18) {
@@ -7,7 +5,7 @@ const promesaIngreso = new Promise ((resolve, reject) => {
 } else if (edad <= 17){
     reject ("Eres menor de edad, no puedes ingresar");
   }
-  else {
+  else if (edad != Number.NaN){
     reject ("El documento presentado no es valido");
 }
 });
